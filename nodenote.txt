@@ -1,0 +1,58 @@
+
+
+                    NodeJS : Runtime Environment + JS Library / Backend Technology
+
+            - Create Client-Service Application    
+            - Feature
+                - Extremely Fast
+                - Asynchronous and event driven
+                - Single threaded
+                - Highly Scalable
+                - No Buffering
+                - Open Source
+            - NodeJS Parts
+                - Global Object : setTimeOut(), console.log()
+                - Modules : require('file')
+                    - Built In :  
+                        - fs
+                        - path
+                        - process : Environment variable
+                        - http
+                        - https
+                        - events
+                        - crypto
+                    - Userdefined : using module.exports for exporting and require for importing
+                - Packages : npm i package-name
+                        - package.json : npm init -y
+                        - node_modules
+                        - package-lock.json   
+            - Node Backend Concepts
+                - Client-Server Architecture
+                        - Server side
+                        - http protocol
+                - API
+                - crud
+                - RESTfull APIs 
+                - JSON
+                - CORS : Cross Origin Resource Sharing    
+            - Express : Framework of NodeJS
+                - Features
+                        - Fast , Minimalist
+                - Packages
+                    - express
+                    - cors
+                    - dotenv    
+                    - mongoose
+            - Mongoose : elegant mongodb object modeling for node.js   
+            - Middleware : is a function used to control request-response cycle
+                - to create a Middleware
+                    - function-name(req,res,next){}
+                - Types of Middleware                                
+                    - Application Specific Middleware : works for all request
+                        - eg : express.json()
+                    - Router Specific Middleware : works in specific routes
+            - Authorization : Using jsonwebtocken
+                    - install jsonwebtocken : npm i jsonwebtocken
+                    - using jsonwebtocken , generate tocken in controller   
+                        - generate token : using sign(payload,secret)     
+                        - verify the token in Router Specific Middleware : verify(token,secret)
